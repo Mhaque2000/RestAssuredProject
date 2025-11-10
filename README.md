@@ -31,4 +31,29 @@ It is based on the Google Maps API example (from Rahul Shetty Academy), covering
 ---
 
 ## 🗂️ Project Structure
+E2EProject/
+│
+├── pom.xml # Maven project configuration and dependencies
+├── testng.xml # TestNG suite file
+├── README.md # Project documentation
+│
+├── src/
+│ ├── main/
+│ │ └── java/
+│ │ ├── pojo/ # POJOs for request payloads
+│ │ │ ├── AddPlace.java
+│ │ │ ├── Location.java
+│ │ │ └── UpdatePlace.java
+│ │ └── utils/ # Utility classes
+│ │ └── TestDataBuilder.java
+│ │
+│ └── test/
+│ └── java/
+│ └── com/
+│ └── mahamood/
+│ ├── BaseTest.java # Common setup (base URI, config)
+│ └── EndToEndCRUDOperation.java # Main CRUD tests
+│
+└── target/
+└── surefire-reports/ # Test reports generated after execution
 
