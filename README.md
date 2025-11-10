@@ -7,53 +7,54 @@ It is based on the Google Maps API example (from Rahul Shetty Academy), covering
 
 ## 🚀 Project Overview
 
-**Framework Highlights**
-- ✅ Built with **REST Assured** for API testing
-- ✅ **TestNG** used as the test runner & report generator
-- ✅ Uses **Maven** for build automation
-- ✅ **POJO classes** for clean request/response serialization
-- ✅ Parameterized & reusable payload builder
-- ✅ Integrated **`testng.xml`** for easy suite execution
+### 🧩 Framework Highlights
+- ✅ Built with **REST Assured** for API testing  
+- ✅ **TestNG** used as the test runner & report generator  
+- ✅ Uses **Maven** for build automation  
+- ✅ **POJO classes** for clean request/response serialization  
+- ✅ Parameterized & reusable payload builder  
+- ✅ Integrated **`testng.xml`** for easy suite execution  
 
 ---
 
 ## 🧱 Tech Stack
 
 | Tool / Library | Purpose |
-|-----------------|----------|
-| Java 8+ | Programming language |
-| REST Assured | API testing library |
-| TestNG | Testing framework |
-| Maven | Build and dependency management |
-| Jackson Databind | JSON serialization/deserialization |
-| SLF4J | Logging (optional) |
+|----------------|----------|
+| **Java 8+** | Programming language |
+| **REST Assured** | API testing library |
+| **TestNG** | Testing framework |
+| **Maven** | Build and dependency management |
+| **Jackson Databind** | JSON serialization/deserialization |
+| **SLF4J (Optional)** | Internal logging support |
 
 ---
 
 ## 🗂️ Project Structure
+
+```bash
 E2EProject/
 │
-├── pom.xml # Maven project configuration and dependencies
-├── testng.xml # TestNG suite file
-├── README.md # Project documentation
+├── pom.xml                     # Maven project configuration and dependencies
+├── testng.xml                  # TestNG suite file
+├── README.md                   # Project documentation
 │
 ├── src/
-│ ├── main/
-│ │ └── java/
-│ │ ├── pojo/ # POJOs for request payloads
-│ │ │ ├── AddPlace.java
-│ │ │ ├── Location.java
-│ │ │ └── UpdatePlace.java
-│ │ └── utils/ # Utility classes
-│ │ └── TestDataBuilder.java
-│ │
-│ └── test/
-│ └── java/
-│ └── com/
-│ └── mahamood/
-│ ├── BaseTest.java # Common setup (base URI, config)
-│ └── EndToEndCRUDOperation.java # Main CRUD tests
+│   ├── main/
+│   │   └── java/
+│   │       ├── pojo/           # POJOs for request payloads
+│   │       │   ├── AddPlace.java
+│   │       │   ├── Location.java
+│   │       │   └── UpdatePlace.java
+│   │       └── utils/          # Utility classes
+│   │           └── TestDataBuilder.java
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── mahamood/
+│                   ├── BaseTest.java               # Common setup (base URI, config)
+│                   └── EndToEndCRUDOperation.java  # Main CRUD tests
 │
 └── target/
-└── surefire-reports/ # Test reports generated after execution
-
+    └── surefire-reports/       # Test reports generated after execution
